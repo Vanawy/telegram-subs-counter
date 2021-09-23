@@ -9,7 +9,7 @@
             "description": "Telegram Bot's API Key",
             "value": ""
         },
-        "USERNAME": {
+        "CHANNEL": {
             "description": "Telegram channel's username. Don't give '@'",
             "value": "tprojects"
         }

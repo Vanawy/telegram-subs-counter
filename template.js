@@ -1,4 +1,4 @@
-async function plate(id) {
+async function plate(id, picture) {
     return `
 <!DOCTYPE html>
 <html lang="en">
@@ -34,10 +34,18 @@ async function plate(id) {
             margin: 30px 50px;
             text-align: center;
         }
+
+        a {
+            color: white;
+        }
         
         .counter {
             font-size: 60px;
             margin-top: 10px;
+        }
+
+        .avatar {
+            border-radius: 50%;
         }
         
         @media (max-width: 630px) {
@@ -51,9 +59,9 @@ async function plate(id) {
 
 <body>
     <div class="counter-container">
-        <i style="color: rgb(10, 202, 250)" class="fab fa-telegram fa-5x"></i>
+        <img src="${picture}" class="avatar" />
         <div class="counter" id="subs"></div>
-        <span>@${id}</span>
+        <a href="https://t.me/${id}">@${id}</a>
     </div>
 </body>
 

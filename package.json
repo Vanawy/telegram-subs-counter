@@ -1,6 +1,6 @@
 {
     "name": "telegram-subs-counter",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Live Telegram Subscribers count for telegram with Socket.io",
     "main": "main.js",
     "scripts": {
